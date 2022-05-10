@@ -79,7 +79,7 @@ nav {
   height: 35%;
 }
 
-.header__nav {
+nav .header__nav {
   font-weight: 300;
   list-style-type: none;
   height: 100%;
@@ -95,18 +95,18 @@ nav {
   padding: 1rem 1.2rem 1rem 1.2rem;
 }
 
-.header__nav-link {
+nav .header__nav .header__nav-link {
   text-decoration: none;
   color: #6f76c8;
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
 
-.header__nav-link:hover {
+nav .header__nav .header__nav-link:hover {
   color: white;
 }
 
-.header__nav-link:focus {
+nav .header__nav .header__nav-link:focus {
   color: white;
 }
 

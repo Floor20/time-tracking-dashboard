@@ -82,29 +82,29 @@ body {
 
 nav {
   height: 35%;
-}
 
-.header__nav {
-  font-weight: 300;
-  list-style-type: none;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1rem 1.2rem 1rem 1.2rem;
-}
+  .header__nav {
+    font-weight: 300;
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 1.2rem 1rem 1.2rem;
 
-.header__nav-link {
-  text-decoration: none;
-  color: hsl(235, 45%, 61%);
-  transition: color 0.2s linear;
+    .header__nav-link {
+      text-decoration: none;
+      color: hsl(235, 45%, 61%);
+      transition: color 0.2s linear;
 
-  &:hover {
-    color: hsl(0, 0%, 100%);
-  }
+      &:hover {
+        color: hsl(0, 0%, 100%);
+      }
 
-  &:focus {
-    color: hsl(0, 0%, 100%);
+      &:focus {
+        color: hsl(0, 0%, 100%);
+      }
+    }
   }
 }
 
@@ -113,7 +113,6 @@ nav {
 }
 
 .tile--work {
-  background-color: $work-color;
   border-radius: 10px;
 }
 
