@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,10 +15,10 @@ body {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr) [4];
+  grid-template-columns: repeat(4, 1fr);
   -webkit-column-gap: 20px;
-          column-gap: 20px;
+  column-gap: 20px;
   row-gap: 25px;
   max-width: 95%;
   width: 950px;
@@ -27,7 +27,7 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .header {
@@ -40,8 +40,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #1c1f4a;
   border-radius: 10px;
 }
@@ -88,10 +88,10 @@ nav .header__nav {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 1rem 1.2rem 1rem 1.2rem;
 }
 
@@ -115,7 +115,7 @@ nav .header__nav .header__nav-link:focus {
 }
 
 .tile--work {
-  background-color: #ff8c66;
+  background-color: hsl(15, 100%, 70%);
   border-radius: 10px;
 }
 
@@ -149,6 +149,7 @@ nav .header__nav .header__nav-link:focus {
   opacity: 0.8;
   background: url("../../images/icon-work.svg") no-repeat top 40% right 15%;
   background-size: 30%;
+  border-radius: 10px;
 }
 
 .tile__border--play {
@@ -200,8 +201,8 @@ nav .header__nav .header__nav-link:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   list-style-type: none;
   margin-bottom: 1.5rem;
 }

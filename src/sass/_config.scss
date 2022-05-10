@@ -8,6 +8,8 @@ $selfcare-color: hsl(43, 84%, 65%);
 @mixin tile-img($url, $color) {
   height: 15%;
   opacity: 0.8;
-  background: $color url("#{$url}") no-repeat top 40% right 15%;
+  background-color: $color;
+  background: url("#{$url}") no-repeat top 40% right 15%;
   background-size: 30%;
+  border-radius: 10px;
 }
