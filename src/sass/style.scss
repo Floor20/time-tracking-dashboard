@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  font-family: Rubik, sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 15px;
+  max-width: 95%;
+  width: 950px;
+  height: 420px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// .grid--wrapper__main {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   column-gap: 30px;
+//   row-gap: 20px;
+//   width: auto;
+// }
+
+.header {
+  grid-row: 1 / 3;
+  row-gap: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+}
+
+//hsl(235, 46%, 20%)
+//hsl(235, 45%, 61%)
+//hsl(236, 100%, 87%)
+//hsl(246, 80%, 60%)
+//hsl(235, 74%, 63%)
+//hsl(236, 100%, 87%)
+
+.header__user {
+  background-color: hsl(235, 74%, 63%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  height: 65%;
+}
+
+.header__user-img {
+  width: 100%;
+  max-width: 60px;
+  height: auto;
+  border: solid 2px hsl(0, 0%, 100%);
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.header__user-info {
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: hsl(236, 100%, 87%);
+}
+
+.header__user-name {
+  display: block;
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+
+nav {
+  height: 35%;
+}
+
+.header__links {
+  font-weight: 300;
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: hsl(235, 45%, 61%);
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: hsl(0, 0%, 100%);
+  }
+
+  &:focus {
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+.tile {
+  border-top: 30px solid hsl(15, 100%, 70%);
+}
+
+.tile-container {
+  border-radius: 10px;
+  height: 100%;
+  width: auto;
+}
+
+.tile,
+.header__links {
+  background-color: hsl(235, 46%, 20%);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.tile__title {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
