@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import "config";
 
 * {
   margin: 0;
@@ -16,10 +17,10 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
-  row-gap: 15px;
+  row-gap: 25px;
   max-width: 95%;
   width: 950px;
-  height: 420px;
+  height: 450px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -83,16 +84,17 @@ nav {
   height: 35%;
 }
 
-.header__links {
+.header__nav {
   font-weight: 300;
   list-style-type: none;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 1rem 1.2rem 1rem 1.2rem;
 }
 
-.nav-link {
+.header__nav-link {
   text-decoration: none;
   color: hsl(235, 45%, 61%);
   transition: color 0.2s linear;
@@ -107,24 +109,88 @@ nav {
 }
 
 .tile {
-  border-top: 30px solid hsl(15, 100%, 70%);
+  list-style-type: none;
 }
 
-.tile-container {
+.tile--work {
+  background-color: $work-color;
   border-radius: 10px;
-  height: 100%;
-  width: auto;
 }
 
-.tile,
-.header__links {
+.tile--play {
+  background-color: $play-color;
+  border-radius: 10px;
+}
+
+.tile--study {
+  background-color: $study-color;
+  border-radius: 10px;
+}
+
+.tile--exercise {
+  background-color: $exercise-color;
+  border-radius: 10px;
+}
+
+.tile--social {
+  background-color: $social-color;
+  border-radius: 10px;
+}
+
+.tile--selfcare {
+  background-color: $selfcare-color;
+  border-radius: 10px;
+}
+
+.tile__border--work {
+  @include tile-img("../../images/icon-work.svg");
+}
+
+.tile__border--play {
+  @include tile-img("../../images/icon-play.svg");
+}
+
+.tile__border--study {
+  @include tile-img("../../images/icon-study.svg");
+}
+
+.tile__border--exercise {
+  @include tile-img("../../images/icon-exercise.svg");
+}
+
+.tile__border--social {
+  @include tile-img("../../images/icon-social.svg");
+}
+
+.tile__border--selfcare {
+  @include tile-img("../../images/icon-self-care.svg");
+}
+
+.tile__wrapper {
+  border-radius: 10px;
   background-color: hsl(235, 46%, 20%);
+}
+
+.tile__content {
   padding: 1.5rem;
-  border-radius: 10px;
 }
 
 .tile__title {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  margin-bottom: 1.5rem;
+}
+
+.tile__time {
+  font-weight: 300;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tile__time-last {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: hsl(236, 100%, 87%);
+  margin-bottom: 0.3rem;
 }
