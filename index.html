@@ -26,17 +26,20 @@
           />
           <div class="header__user-info">
             Report for
-            <span class="header__user-name"
-              >Jeremy<br />
-              Robson</span
-            >
+            <span class="header__user-name">Jeremy Robson</span>
           </div>
         </div>
         <nav>
           <ul class="header__nav">
-            <li><a class="header__nav-link" href="#">Daily</a></li>
-            <li><a class="header__nav-link" href="#">Weekly</a></li>
-            <li><a class="header__nav-link" href="#">Monthly</a></li>
+            <li>
+              <a class="header__nav-link" href="#" data-for-tab="1">Daily</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="#" data-for-tab="2">Weekly</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="#" data-for-tab="3">Monthly</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -45,13 +48,16 @@
         <li class="tile__border--work"></li>
         <li class="tile__wrapper">
           <figure class="tile__content">
-            <ul class="tile__title">
+            <ul class="tile__title-row">
               <li>Work</li>
-              <li>...</li>
+              <li><img src="./images/icon-ellipsis.svg" /></li>
             </ul>
-            <div class="tile__time">5hrs</div>
-            <!-- daily -->
-            <div class="tile__time-last">Yesterday - 7hrs</div>
+            <ul class="tile__time-row">
+              <!-- daily -->
+              <li class="tile__time">5hrs</li>
+              <li class="tile__time-last">Yesterday - 7hrs</li>
+            </ul>
+
             <!-- daily -->
             <!-- 32hrs -->
             <!-- weekly -->
@@ -69,13 +75,15 @@
         <li class="tile__border--play"></li>
         <li class="tile__wrapper">
           <figure class="tile__content">
-            <ul class="tile__title">
+            <ul class="tile__title-row">
               <li>Play</li>
-              <li>...</li>
+              <li><img src="./images/icon-ellipsis.svg" /></li>
             </ul>
-            <div class="tile__time">1hr</div>
-            <!-- daily -->
-            <div class="tile__time-last">Yesterday - 2hrs</div>
+            <ul class="tile__time-row">
+              <!-- daily -->
+              <li class="tile__time">1hr</li>
+              <li class="tile__time-last">Yesterday - 2hrs</li>
+            </ul>
             <!-- daily -->
             <!-- 32hrs -->
             <!-- weekly -->
@@ -93,13 +101,15 @@
         <li class="tile__border--study"></li>
         <li class="tile__wrapper">
           <figure class="tile__content">
-            <ul class="tile__title">
+            <ul class="tile__title-row">
               <li>Study</li>
-              <li>...</li>
+              <li><img src="./images/icon-ellipsis.svg" /></li>
             </ul>
-            <div class="tile__time">0hrs</div>
-            <!-- daily -->
-            <div class="tile__time-last">Yesterday - 1hr</div>
+            <ul class="tile__time-row">
+              <!-- daily -->
+              <li class="tile__time">0hrs</li>
+              <li class="tile__time-last">Yesterday - 1hr</li>
+            </ul>
             <!-- daily -->
             <!-- 32hrs -->
             <!-- weekly -->
@@ -117,13 +127,15 @@
         <li class="tile__border--exercise"></li>
         <li class="tile__wrapper">
           <figure class="tile__content">
-            <ul class="tile__title">
+            <ul class="tile__title-row">
               <li>Exercise</li>
-              <li>...</li>
+              <li><img src="./images/icon-ellipsis.svg" /></li>
             </ul>
-            <div class="tile__time">1hr</div>
-            <!-- daily -->
-            <div class="tile__time-last">Yesterday - 1hr</div>
+            <ul class="tile__time-row">
+              <!-- daily -->
+              <li class="tile__time">1hr</li>
+              <li class="tile__time-last">Yesterday - 1hr</li>
+            </ul>
             <!-- daily -->
             <!-- 32hrs -->
             <!-- weekly -->
@@ -141,13 +153,15 @@
         <li class="tile__border--social"></li>
         <li class="tile__wrapper">
           <figure class="tile__content">
-            <ul class="tile__title">
+            <ul class="tile__title-row">
               <li>Social</li>
-              <li>...</li>
+              <li><img src="./images/icon-ellipsis.svg" /></li>
             </ul>
-            <div class="tile__time">1hr</div>
-            <!-- daily -->
-            <div class="tile__time-last">Yesterday - 3hrs</div>
+            <ul class="tile__time-row">
+              <!-- daily -->
+              <li class="tile__time">1hr</li>
+              <li class="tile__time-last">Yesterday - 3hrs</li>
+            </ul>
             <!-- daily -->
             <!-- 32hrs -->
             <!-- weekly -->
@@ -165,13 +179,15 @@
         <li class="tile__border--selfcare"></li>
         <li class="tile__wrapper">
           <figure class="tile__content">
-            <ul class="tile__title">
+            <ul class="tile__title-row">
               <li>Self Care</li>
-              <li>...</li>
+              <li><img src="./images/icon-ellipsis.svg" /></li>
             </ul>
-            <div class="tile__time">0hrs</div>
-            <!-- daily -->
-            <div class="tile__time-last">Yesterday - 1hr</div>
+            <ul class="tile__time-row">
+              <!-- daily -->
+              <li class="tile__time">0hrs</li>
+              <li class="tile__time-last">Yesterday - 1hr</li>
+            </ul>
             <!-- daily -->
             <!-- 32hrs -->
             <!-- weekly -->

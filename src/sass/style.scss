@@ -25,157 +25,165 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
 
-.header {
-  grid-row: 1 / 3;
-  row-gap: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: hsl(235, 46%, 20%);
-  border-radius: 10px;
-
-  .header__user {
-    background-color: hsl(235, 74%, 63%);
-    padding: 1.5rem;
-    border-radius: 10px;
-    height: 65%;
-
-    .header__user-img {
-      width: 100%;
-      max-width: 60px;
-      height: auto;
-      border: solid 2px hsl(0, 0%, 100%);
-      border-radius: 50%;
-      display: block;
-      margin-bottom: 2rem;
-    }
-
-    .header__user-info {
-      font-weight: 300;
-      font-size: 0.8rem;
-      color: hsl(236, 100%, 87%);
-
-      .header__user-name {
-        display: block;
-        font-size: 2rem;
-        color: hsl(0, 0%, 100%);
-      }
-    }
-  }
-}
-
-nav {
-  height: 35%;
-
-  .header__nav {
-    font-weight: 300;
-    list-style-type: none;
-    height: 100%;
+  .header {
+    grid-row: 1 / 3;
+    row-gap: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 1rem 1.2rem 1rem 1.2rem;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
 
-    .header__nav-link {
-      text-decoration: none;
-      color: hsl(235, 45%, 61%);
-      transition: color 0.2s linear;
+    .header__user {
+      background-color: hsl(235, 74%, 63%);
+      padding: 1.5rem;
+      border-radius: 10px;
+      height: 65%;
 
-      &:hover {
-        color: hsl(0, 0%, 100%);
+      .header__user-img {
+        width: 100%;
+        max-width: 60px;
+        height: auto;
+        border: solid 2px hsl(0, 0%, 100%);
+        border-radius: 50%;
+        display: block;
+        margin-bottom: 2rem;
       }
 
-      &:focus {
-        color: hsl(0, 0%, 100%);
+      .header__user-info {
+        font-weight: 300;
+        font-size: 0.8rem;
+        color: hsl(236, 100%, 87%);
+
+        .header__user-name {
+          display: block;
+          font-size: 2rem;
+          color: hsl(0, 0%, 100%);
+        }
+      }
+    }
+  }
+
+  nav {
+    height: 35%;
+
+    .header__nav {
+      font-weight: 300;
+      list-style-type: none;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 1rem 1.2rem 1rem 1.2rem;
+
+      .header__nav-link {
+        text-decoration: none;
+        color: hsl(235, 45%, 61%);
+        transition: color 0.2s linear;
+
+        &:hover {
+          color: hsl(0, 0%, 100%);
+        }
+
+        &:focus {
+          color: hsl(0, 0%, 100%);
+        }
+      }
+    }
+  }
+
+  .tile {
+    list-style-type: none;
+
+    .tile--work {
+      background-color: $work-color;
+      border-radius: 10px;
+    }
+
+    .tile--play {
+      background-color: $play-color;
+      border-radius: 10px;
+    }
+
+    .tile--study {
+      background-color: $study-color;
+      border-radius: 10px;
+    }
+
+    .tile--exercise {
+      background-color: $exercise-color;
+      border-radius: 10px;
+    }
+
+    .tile--social {
+      background-color: $social-color;
+      border-radius: 10px;
+    }
+
+    .tile--selfcare {
+      background-color: $selfcare-color;
+      border-radius: 10px;
+    }
+
+    .tile__border--work {
+      @include tile-img("../../images/icon-work.svg");
+    }
+
+    .tile__border--play {
+      @include tile-img("../../images/icon-play.svg");
+    }
+
+    .tile__border--study {
+      @include tile-img("../../images/icon-study.svg");
+    }
+
+    .tile__border--exercise {
+      @include tile-img("../../images/icon-exercise.svg");
+    }
+
+    .tile__border--social {
+      @include tile-img("../../images/icon-social.svg");
+    }
+
+    .tile__border--selfcare {
+      @include tile-img("../../images/icon-self-care.svg");
+    }
+
+    .tile__wrapper {
+      border-radius: 10px;
+      background-color: hsl(235, 46%, 20%);
+
+      .tile__content {
+        padding: 1.5rem;
+
+        .tile__title-row {
+          display: flex;
+          justify-content: space-between;
+          list-style-type: none;
+          margin-bottom: 1.5rem;
+        }
+
+        .tile__time-row {
+          list-style-type: none;
+        }
+
+        .tile__time {
+          font-weight: 300;
+          font-size: 3.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .tile__time-last {
+          font-size: 0.8rem;
+          font-weight: 300;
+          color: hsl(236, 100%, 87%);
+          margin-bottom: 0.3rem;
+        }
       }
     }
   }
 }
 
-.tile {
-  list-style-type: none;
-}
-
-.tile--work {
-  background-color: $work-color;
-  border-radius: 10px;
-}
-
-.tile--play {
-  background-color: $play-color;
-  border-radius: 10px;
-}
-
-.tile--study {
-  background-color: $study-color;
-  border-radius: 10px;
-}
-
-.tile--exercise {
-  background-color: $exercise-color;
-  border-radius: 10px;
-}
-
-.tile--social {
-  background-color: $social-color;
-  border-radius: 10px;
-}
-
-.tile--selfcare {
-  background-color: $selfcare-color;
-  border-radius: 10px;
-}
-
-.tile__border--work {
-  @include tile-img("../../images/icon-work.svg", $work-color);
-}
-
-.tile__border--play {
-  @include tile-img("../../images/icon-play.svg");
-}
-
-.tile__border--study {
-  @include tile-img("../../images/icon-study.svg");
-}
-
-.tile__border--exercise {
-  @include tile-img("../../images/icon-exercise.svg");
-}
-
-.tile__border--social {
-  @include tile-img("../../images/icon-social.svg");
-}
-
-.tile__border--selfcare {
-  @include tile-img("../../images/icon-self-care.svg");
-}
-
-.tile__wrapper {
-  border-radius: 10px;
-  background-color: hsl(235, 46%, 20%);
-}
-
-.tile__content {
-  padding: 1.5rem;
-}
-
-.tile__title {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  margin-bottom: 1.5rem;
-}
-
-.tile__time {
-  font-weight: 300;
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.tile__time-last {
-  font-size: 0.8rem;
-  font-weight: 300;
-  color: hsl(236, 100%, 87%);
-  margin-bottom: 0.3rem;
-}
+/* ---------------------------------------------- */
+/* QUERIES */
+/* ---------------------------------------------- */
