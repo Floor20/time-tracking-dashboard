@@ -11,6 +11,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <script defer src="./src/js/script.js"></script>
 
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
@@ -54,19 +55,23 @@
             </ul>
             <ul class="tile__time-row">
               <!-- daily -->
-              <li class="tile__time">5hrs</li>
-              <li class="tile__time-last">Yesterday - 7hrs</li>
+              <li class="tile__time" data-time="1">5hrs</li>
+              <li class="tile__time-last" data-time-last="1">
+                Yesterday - 7hrs
+              </li>
+              <!-- weekly -->
+              <li class="tile__time tile__time--hidden" data-time="2">32hrs</li>
+              <li class="tile__time-last tile__time--hidden" data-time-last="2">
+                Last week - 36hrs
+              </li>
+              <!-- monthly -->
+              <li class="tile__time tile__time--hidden" data-time="3">
+                103hrs
+              </li>
+              <li class="tile__time-last tile__time--hidden" data-time-last="3">
+                Last month - 128hrs
+              </li>
             </ul>
-
-            <!-- daily -->
-            <!-- 32hrs -->
-            <!-- weekly -->
-            <!-- Previous - 36hrs -->
-            <!-- weekly -->
-            <!-- 103hrs -->
-            <!-- monthly -->
-            <!-- Previous - 128hrs -->
-            <!-- monthly -->
           </figure>
         </li>
       </ul>
@@ -81,18 +86,21 @@
             </ul>
             <ul class="tile__time-row">
               <!-- daily -->
-              <li class="tile__time">1hr</li>
-              <li class="tile__time-last">Yesterday - 2hrs</li>
+              <li class="tile__time" data-time="1">1hr</li>
+              <li class="tile__time-last" data-time-last="1">
+                Yesterday - 2hrs
+              </li>
+              <!-- weekly -->
+              <li class="tile__time tile__time--hidden" data-time="2">10hrs</li>
+              <li class="tile__time-last tile__time--hidden" data-time-last="2">
+                Last week - 8hrs
+              </li>
+              <!-- monthly -->
+              <li class="tile__time tile__time--hidden" data-time="3">23hrs</li>
+              <li class="tile__time-last tile__time--hidden" data-time-last="3">
+                Last month - 29hrs
+              </li>
             </ul>
-            <!-- daily -->
-            <!-- 32hrs -->
-            <!-- weekly -->
-            <!-- Previous - 36hrs -->
-            <!-- weekly -->
-            <!-- 103hrs -->
-            <!-- monthly -->
-            <!-- Previous - 128hrs -->
-            <!-- monthly -->
           </figure>
         </li>
       </ul>
@@ -107,18 +115,21 @@
             </ul>
             <ul class="tile__time-row">
               <!-- daily -->
-              <li class="tile__time">0hrs</li>
-              <li class="tile__time-last">Yesterday - 1hr</li>
+              <li class="tile__time" data-time="1">0hrs</li>
+              <li class="tile__time-last" data-time-last="1">
+                Yesterday - 1hr
+              </li>
+              <!-- weekly -->
+              <li class="tile__time tile__time--hidden" data-time="2">4hrs</li>
+              <li class="tile__time-last tile__time--hidden" data-time-last="2">
+                Last week - 7hrs
+              </li>
+              <!-- monthly -->
+              <li class="tile__time tile__time--hidden" data-time="3">13hrs</li>
+              <li class="tile__time-last tile__time--hidden" data-time-last="3">
+                Last month - 18hrs
+              </li>
             </ul>
-            <!-- daily -->
-            <!-- 32hrs -->
-            <!-- weekly -->
-            <!-- Previous - 36hrs -->
-            <!-- weekly -->
-            <!-- 103hrs -->
-            <!-- monthly -->
-            <!-- Previous - 128hrs -->
-            <!-- monthly -->
           </figure>
         </li>
       </ul>
@@ -133,18 +144,21 @@
             </ul>
             <ul class="tile__time-row">
               <!-- daily -->
-              <li class="tile__time">1hr</li>
-              <li class="tile__time-last">Yesterday - 1hr</li>
+              <li class="tile__time" data-time="1">1hr</li>
+              <li class="tile__time-last" data-time-last="1">
+                Yesterday - 1hr
+              </li>
+              <!-- weekly -->
+              <li class="tile__time tile__time--hidden" data-time="2">4hrs</li>
+              <li class="tile__time-last tile__time--hidden" data-time-last="2">
+                Last week - 5hrs
+              </li>
+              <!-- monthly -->
+              <li class="tile__time tile__time--hidden" data-time="3">11hrs</li>
+              <li class="tile__time-last tile__time--hidden" data-time-last="3">
+                Last month - 18hrs
+              </li>
             </ul>
-            <!-- daily -->
-            <!-- 32hrs -->
-            <!-- weekly -->
-            <!-- Previous - 36hrs -->
-            <!-- weekly -->
-            <!-- 103hrs -->
-            <!-- monthly -->
-            <!-- Previous - 128hrs -->
-            <!-- monthly -->
           </figure>
         </li>
       </ul>
@@ -159,18 +173,21 @@
             </ul>
             <ul class="tile__time-row">
               <!-- daily -->
-              <li class="tile__time">1hr</li>
-              <li class="tile__time-last">Yesterday - 3hrs</li>
+              <li class="tile__time" data-time="1">1hr</li>
+              <li class="tile__time-last" data-time-last="1">
+                Yesterday - 3hrs
+              </li>
+              <!-- weekly -->
+              <li class="tile__time tile__time--hidden" data-time="2">5hrs</li>
+              <li class="tile__time-last tile__time--hidden" data-time-last="2">
+                Last week - 10hrs
+              </li>
+              <!-- monthly -->
+              <li class="tile__time tile__time--hidden" data-time="3">21hrs</li>
+              <li class="tile__time-last tile__time--hidden" data-time-last="3">
+                Last month - 23hrs
+              </li>
             </ul>
-            <!-- daily -->
-            <!-- 32hrs -->
-            <!-- weekly -->
-            <!-- Previous - 36hrs -->
-            <!-- weekly -->
-            <!-- 103hrs -->
-            <!-- monthly -->
-            <!-- Previous - 128hrs -->
-            <!-- monthly -->
           </figure>
         </li>
       </ul>
@@ -185,18 +202,21 @@
             </ul>
             <ul class="tile__time-row">
               <!-- daily -->
-              <li class="tile__time">0hrs</li>
-              <li class="tile__time-last">Yesterday - 1hr</li>
+              <li class="tile__time" data-time="1">0hrs</li>
+              <li class="tile__time-last" data-time-last="1">
+                Yesterday - 1hr
+              </li>
+              <!-- weekly -->
+              <li class="tile__time tile__time--hidden" data-time="2">2hrs</li>
+              <li class="tile__time-last tile__time--hidden" data-time-last="2">
+                Last week - 2hrs
+              </li>
+              <!-- monthly -->
+              <li class="tile__time tile__time--hidden" data-time="3">7hrs</li>
+              <li class="tile__time-last tile__time--hidden" data-time-last="3">
+                Last month - 11hrs
+              </li>
             </ul>
-            <!-- daily -->
-            <!-- 32hrs -->
-            <!-- weekly -->
-            <!-- Previous - 36hrs -->
-            <!-- weekly -->
-            <!-- 103hrs -->
-            <!-- monthly -->
-            <!-- Previous - 128hrs -->
-            <!-- monthly -->
           </figure>
         </li>
       </ul>

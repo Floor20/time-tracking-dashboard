@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +21,7 @@ html {
   display: grid;
   -ms-grid-columns: (1fr) [4];
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   -webkit-column-gap: 20px;
   column-gap: 20px;
   row-gap: 25px;
@@ -111,6 +113,10 @@ nav .header__nav .header__nav-link:hover {
 }
 
 nav .header__nav .header__nav-link:focus {
+  color: white;
+}
+
+.header__nav-link--active {
   color: white;
 }
 
@@ -221,12 +227,27 @@ nav .header__nav .header__nav-link:focus {
   margin-bottom: 0.5rem;
 }
 
+.tile__time--hidden {
+  display: none;
+}
+
+.tile__time-weekly,
+.tile__time-weekly-last,
+.tile__time-monthly,
+.tile__time-monthly-last {
+  display: none;
+}
+
 .tile__time-last {
   font-size: 0.8rem;
   font-weight: 300;
   color: #bdc1ff;
   margin-bottom: 0.3rem;
 }
+
+/* ---------------------------------------------- */
+/* QUERIES */
+/* ---------------------------------------------- */
 
 @media only screen and (max-width: 725px) {
   .grid {
