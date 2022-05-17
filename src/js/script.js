@@ -27,8 +27,6 @@ const setupTabs = function () {
             let lastWeeklyTime = element.timeframes.weekly.previous;
             let monthlyTime = element.timeframes.monthly.current;
             let lastMonthlyTime = element.timeframes.monthly.previous;
-            console.log(timeRows);
-            console.log(dailyTime, lastDailyTime);
 
             const [dailyTimeMarkup, weeklyTimeMarkup, monthlyTimeMarkup] = [
               `
