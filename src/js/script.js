@@ -6,6 +6,12 @@ const setupTabs = function () {
       const tab = button.dataset.forTab;
       const timeRows = document.querySelectorAll(".tile__time-row");
 
+      const renderTimes = function (counter, markup) {
+        timeRows[counter].classList.remove("tile__time-row");
+        timeRows[counter].classList.add("tile__time--hidden");
+        timeRows[counter].insertAdjacentHTML("beforebegin", markup);
+      };
+
       const getTimeData = async function () {
         try {
           const res = await fetch("../../data.json");
@@ -48,24 +54,9 @@ const setupTabs = function () {
               `,
             ];
 
-            timeRows[index].classList.remove("tile__time-row");
-            timeRows[index].classList.add("tile__time--hidden");
-
-            if (tab === "1")
-              timeRows[index].insertAdjacentHTML(
-                "beforebegin",
-                dailyTimeMarkup
-              );
-            if (tab === "2")
-              timeRows[index].insertAdjacentHTML(
-                "beforebegin",
-                weeklyTimeMarkup
-              );
-            if (tab === "3")
-              timeRows[index].insertAdjacentHTML(
-                "beforebegin",
-                monthlyTimeMarkup
-              );
+            if (tab === "1") renderTimes(index, dailyTimeMarkup);
+            if (tab === "2") renderTimes(index, weeklyTimeMarkup);
+            if (tab === "3") renderTimes(index, monthlyTimeMarkup);
           });
         } catch (err) {
           console.error(`${err.message}`);
