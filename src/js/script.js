@@ -16,7 +16,7 @@ const setupTabs = function () {
         try {
           const res = await fetch("../../data.json");
 
-          if (!res.ok) throw new Error("Problem getting advice data");
+          if (!res.ok) throw new Error("Problem getting time data");
 
           const timeData = await res.json();
 
